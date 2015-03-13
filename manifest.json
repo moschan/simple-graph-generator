@@ -1,0 +1,16 @@
+{
+  "manifest_version": 1,
+  "name": "Simple Graph Generatorr",
+  "version": "1.0",
+  "description": "Make graph of something quickly",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "icons" : {
+    "128": "icon.png"
+  }
+}
