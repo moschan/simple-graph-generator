@@ -7,7 +7,7 @@ $(function () {
 
     /* React + JSX */
     React.render(
-      <h1>Hello, React!</h1>,
+      React.createElement("h1", null, "Hello, React!"),
       document.getElementById('heading')
     );
 });
