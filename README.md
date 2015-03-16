@@ -11,6 +11,7 @@
 
 ### 技術
 - React
+- Flux ?
 - JSX
 - babel or coffee
 - chart.js
