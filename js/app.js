@@ -9,7 +9,7 @@ $(function () {
         var Component_title = React.createClass({
           render : function() {
             return (
-                <p id="title">{ tab.title }</p>
+                <p id="title">{ this.props.title }</p>
             )
           }
         });
@@ -17,7 +17,7 @@ $(function () {
         var Component_url = React.createClass({
           render : function() {
             return (
-                <p id="url">{ tab.url }</p>
+                <p id="url">{ this.props.url }</p>
             )
           }
         });
@@ -27,15 +27,15 @@ $(function () {
             return (
               <div class="Component-inner">
                 <h1 className="commentForm">Hello, React!</h1>
-                <Component_title />
-                <Component_url />
+                <Component_title title={this.props.tab.title} />
+                <Component_url url={this.props.tab.url} />
               </div>
             )
           }
         });
 
         React.render(
-          <Component />,
+          <Component tab={tab} />,
           document.getElementById('wrap')
         );
 
