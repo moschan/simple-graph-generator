@@ -1,21 +1,28 @@
+// ビルド
+// jsx --watch js build
+/* React + JSX */
 $(function () {
+
     // chrome tab example
     chrome.tabs.getSelected(null, function(tab) {
-        /* React + JSX */
-        React.render(
-          React.createElement("h1", null, "Hello, React!"),
-          document.getElementById('heading')
-        );
+
+        var Component = React.createClass({displayName: "Component",
+          render : function() {
+            return (
+              React.createElement("div", {class: "Component-inner"}, 
+                React.createElement("h1", {className: "commentForm"}, "Hello, React!"), 
+                React.createElement("p", {id: "title", className: "commentForm"},  tab.title), 
+                React.createElement("p", {id: "url", className: "commentForm"},  tab.url)
+              )
+            )
+          }
+        });
 
         React.render(
-          React.createElement("p", null,  tab.title),
-          document.getElementById('title')
+          React.createElement(Component, null),
+          document.getElementById('wrap')
         );
 
-        React.render(
-          React.createElement("p", null,  tab.url),
-          document.getElementById('url')
-        );
     });
 
 });
