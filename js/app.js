@@ -1,6 +1,7 @@
 // ビルド
 // jsx --watch js build
 /* React + JSX */
+// var Dispatcher = require('flux').Dispatcher;
 $(function () {
 
     // chrome tab example
