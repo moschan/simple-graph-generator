@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/moschan/simple-graph-generator/issues"
   },
-  "homepage": "https://github.com/moschan/simple-graph-generator"
+  "homepage": "https://github.com/moschan/simple-graph-generator",
+  "devDependencies": {
+    "chart.js": "^1.0.2",
+    "react": "^0.13.1",
+    "react-chartjs": "^0.6.0"
+  }
 }
